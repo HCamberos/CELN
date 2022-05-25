@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Encuesta</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">  
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html#section1"><strong>Computo en la nube</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html#section2">Estado del arte</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html#section3">Sondeo de opinion estudiantil</a>
+    </li>
+  	<li class="nav-item">
+      <a class="nav-link" href="index.html#section4">Servicios de Google Cloud</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Temas expuestos
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="index.html#section51">Google Contacts</a>
+        <a class="dropdown-item" href="index.html#section52">Google App Engine</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div class="container" style="padding-top:70px">
+  <h2>Encuesta opinion estudiantil</h2>
+  <form action="respuestas.php" method="post">
+  <div class="form-group">
+	<div>
+		<label for="exampleFormControlInput1">¿Has escuchado el termino Cloud Computing (computo en la nube)?</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="radp1" id="p1s" value="si">
+		  <label class="form-check-label" for="exampleRadios1">
+			Sí
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="radp1" id="p1n" value="no">
+		  <label class="form-check-label" for="exampleRadios2">
+			No
+		  </label>
+		</div>
+	</div>
+	<div>
+		<label for="exampleFormControlInput1">¿Crees que es importante que en la FIME se enseñe Cloud Computing?</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="radp2" id="p2s" value="si">
+		  <label class="form-check-label" for="exampleRadios1">
+			Sí
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="radp2" id="p2n" value="no">
+		  <label class="form-check-label" for="exampleRadios2">
+			No
+		  </label>
+		</div>
+	</div>
+	<div>
+		<label for="exampleFormControlInput1">¿Conoce cuales son los servicios que se ofrecen en Cloud Computing?</label>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="radp3" id="p3s" value="si">
+		  <label class="form-check-label" for="exampleRadios1">
+			Sí
+		  </label>
+		</div>
+		<div class="form-check">
+		  <input class="form-check-input" type="radio" name="radp3" id="p3n" value="no">
+		  <label class="form-check-label" for="exampleRadios2">
+			No
+		  </label>
+		</div>
+	</div>
+	<div>
+		<label for="exampleFormControlInput1">¿Cual de los servicios de Cloud Computing que conoce cree que se pueda ofrecer o aplicar a la FIME?</label>
+    	<textarea class="form-control" id="p4" name="p4" rows="3"></textarea>
+	</div>
+	<div>
+		<label for="exampleFormControlInput1">¿Cuales serían los principales beneficios de Cloud Computing en la carrera?</label>
+		<textarea class="form-control" id="p5" name="p5" rows="3"></textarea>
+	</div>
+	<div>
+		<label for="exampleFormControlTextarea1">¿Cuales servicios de Cloud Computing son los que usas con mas frecuencia?</label>
+    	<textarea class="form-control" id="p6" name="p6" rows="3"></textarea>
+	</div>
+  	<div>
+		<label for="exampleFormControlTextarea1">¿Con que frecuencia utiliza servicios de Cloud Computing?</label>
+    	<textarea class="form-control" id="p7" name="p7" rows="3"></textarea>
+	</div>
+	<div>
+		<label for="exampleFormControlTextarea1">¿Cual es la ventaja que tiene el Cloud Computing respecto a otras tecnologias?</label>
+    	<textarea class="form-control" id="p8" name="p8" rows="3"></textarea>
+	</div>
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+</form>
+</div>
+
+</body>
+</html>
